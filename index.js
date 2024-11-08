@@ -21,7 +21,9 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log("App is running on port", PORT);
 });
-
+app.get("/",(req,res )=>{
+  res.send("Hello! Express")
+})
 const createData = async (newData) => {
   try {
     const cloth = new ECommerce(newData);
