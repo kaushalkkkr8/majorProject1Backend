@@ -9,12 +9,12 @@ app.use(express.json());
 const cors = require("cors");
 const Address = require("./addressSchema");
 const Order = require("./orderSchema");
-// const corsOptions = {
-//   origin: "*",
-//   credentials: true,
-//   optionSuccessStatus: 200,
-// };
-app.use(cors());
+const corsOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+// app.use(cors(corsOptions));
 
 const PORT = 5000;
 
