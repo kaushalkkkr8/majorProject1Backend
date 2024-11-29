@@ -16,7 +16,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-const PORT = 3000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
   console.log("App is running on port", PORT);
@@ -175,7 +175,9 @@ app.delete("/cart/:cartId", async (req, res) => {
 
 //
 app.post("/address", async (req, res) => {
-  const { address } = req.body;
+  const  address  = req.body;
+  console.log(address);
+  
   try {
     const newAddress = new Address(address);
     await newAddress.save();

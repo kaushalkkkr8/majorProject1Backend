@@ -2,9 +2,21 @@ const mongo = require("mongoose");
 
 const addressSchema = new mongo.Schema(
   {
-    address:{
+    name:{
       type:String
-    }
+    },
+    address1:{
+      type:String
+    },
+    city:{
+      type:String
+    },
+    state:{
+      type:String
+    },
+    pincode:{
+      type:String
+    },
   },
   { timestamps: true }
 );
