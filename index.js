@@ -9,7 +9,7 @@ app.use(express.json());
 const cors = require("cors");
 const Address = require("./addressSchema");
 const Order = require("./orderSchema");
-<<<<<<< HEAD
+
 const corsOptions = {
   origin: "*",
   credentials: true,
@@ -17,15 +17,8 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-=======
-// const corsOptions = {
-//   origin: "*",
-//   credentials: true,
-//   optionSuccessStatus: 200,
-// };
-// app.use(cors(corsOptions));
+
 app.use(cors())
->>>>>>> 016fd71fbf5d865e28ff0e7da537ecc08ab1edd5
 const PORT = 5000;
 
 app.listen(PORT, () => {
